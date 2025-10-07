@@ -291,8 +291,9 @@ word
     }
     .skill
     {
-        font-size: 18px;
-        padding: 35px 20px;
+        width: 300px;
+        font-size: 17px;
+        padding: 20px;
 
     }
     .skillIcon{
