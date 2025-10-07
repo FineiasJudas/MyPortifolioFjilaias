@@ -72,8 +72,8 @@ nav a:hover
 .main
 {
     flex: 1;
-    margin-top: 60px;
     display: flex;
+    margin-top: 60px;
     flex-direction: column;
     padding-top: var(--spacing-lg);
 }
@@ -103,7 +103,7 @@ nav a:hover
 #details
 {
     color: #302f2f;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--font-color);
     font-size: 20px;
 }
@@ -229,20 +229,19 @@ word
     {
         padding-left: 0;
     }
+    .page-wrapper p
+    {
+        font-size: 18px;
+    }
+     .page-wrapper .title
+    {
+        font-size: 23px;
+    }
     .header
     {
         flex-direction: column;
         align-items: center;
         gap: var(--spacing-sm);
-    }
-    h2
-    {
-        font-size: 34px;
-    }
-    .introdution > p
-    {
-        font-weight: 500;
-        font-size: 30px;
     }
     nav
     {
@@ -269,7 +268,11 @@ word
     .introdution
     {
         width: 90%;
-        font-size: 20px;
+    }
+
+    #details
+    {
+        font-size: 18px;
     }
 
     .photo img
@@ -285,6 +288,16 @@ word
     .main .skills
     {
         width: 100%;
+    }
+    .skill
+    {
+        font-size: 18px;
+        padding: 35px 20px;
+
+    }
+    .skillIcon{
+        width: 34px;
+        height: 34px;
     }
     .contacts > div
     {
