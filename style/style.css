@@ -29,7 +29,7 @@ body
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-left: 250px;
+    padding-left: 200px;
 }
 
 .header
@@ -42,7 +42,7 @@ body
 
 .header > div
 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     color: var(--font-color);
 }
@@ -50,6 +50,7 @@ body
 nav
 {
     display: flex;
+    width: 30%;
     gap: var(--spacing-sm);
 }
 
@@ -77,49 +78,57 @@ nav a:hover
     padding-top: var(--spacing-lg);
 }
 
-.main > div {
-    gap: 80px;
+.main > div
+{
+    gap: 50px;
     display: flex;
     flex-wrap: wrap;
     padding: var(--spacing-md);
 }
 
-.introdution {
-    max-width: 700px;
+.introdution
+{
+    max-width: 500px;
 }
 
-.introdution > p {
+.introdution > p
+{
     padding: var(--spacing-sm);
     font-weight: 600;
-    font-size: 35px;
+    font-size: 28px;
     line-height: 1.0;
     color: var(--font);
 }
 
-#details {
+#details
+{
     color: #302f2f;
+    font-weight: 500;
+    color: var(--font-color);
     font-size: 20px;
 }
 
 .photo
 {
     text-align: center;
-    max-width: 400px;
+    max-width: 420px;
 }
 
 img
 {
-    height: 540px;
+    height: 440px;
 }
 
-h2 {
-    margin-left: var(--spacing-sm);
-    line-height: 1.0;
+h2
+{
+    font-size: 32px;
+    line-height: 0.5;
     color: var(--font);
-    font-size: 40px;
+    margin-left: var(--spacing-sm);
 }
 
-#button {
+#button
+{
     width: 30%;
     padding: 20px;
     margin-top: var(--spacing-md);
@@ -132,24 +141,86 @@ h2 {
     cursor: pointer;
 }
 
-#button:hover {
+#button:hover
+{
     background-color: #1f8b7d;
 }
 
-.footer {
+.footer
+{
     display: flex;
     gap: var(--spacing-md);
     padding: var(--spacing-md);
     color: white;
 }
 
-.social-icon svg {
-    width: 80px;
-    height: 80px;
+.social-icon svg
+{
+    width: 70px;
+    height: 70px;
 }
 
-word {
+.skill
+{
+    width: 350px;
+    padding: 40px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--font-color);
+    border-radius: 10px;
+    font-family: var(--font);
+    border: 1px solid var(--bt-color);
+}
+.skill > h4 
+{
+    margin: 10px 0 10px;
+}
+
+.main .skills
+{
+    width: 80%;
+    display: flex;
+    line-height: 1.2;
+    gap: var(--spacing-md);
+}
+
+.skillIcon
+{
+    width: 40px;
+    height: 40px;
+}
+
+word
+{
     color: var(--theme-color);
+}
+
+.contact 
+{
+    display: flex;
+    align-items: center;
+}
+
+.contacts
+{
+    width: 50%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm); 
+}
+
+.contacts > div
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid var(--bt-color);
+    border-radius: 10px;
 }
 
 @media (max-width: 768px)
@@ -158,7 +229,6 @@ word {
     {
         padding-left: 0;
     }
-
     .header
     {
         flex-direction: column;
@@ -169,10 +239,11 @@ word {
     {
         font-size: 34px;
     }
-    .introdution > p {
-    font-weight: 500;
-    font-size: 30px;
-}
+    .introdution > p
+    {
+        font-weight: 500;
+        font-size: 30px;
+    }
     nav
     {
         flex-direction: column;
@@ -206,20 +277,25 @@ word {
         height: auto;
         max-width: 100%;
     }
-
     #button
     {
         width: 40%;
         font-size: 16px;
     }
-
+    .main .skills
+    {
+        width: 100%;
+    }
+    .contacts > div
+    {
+        width: 100%;
+    }
     .footer
     {
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-
     .social-icon svg {
         width: 50px;
         height: 50px;
